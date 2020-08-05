@@ -10,10 +10,22 @@ var Schema = mongoose.Schema;
 */
 const librarySchema = new Schema({
   // isi disini
+  judulBuku :{
+    type : String,
+  },
+  pengarangBuku:{
+    type : String,
+  },
+  genreBuku:{
+    type: String,
+  },
+  isDipinjam:{
+    type: Boolean,
+  },
 });
 
 
 // TODO: Buat model mongoose dengan menggunakan skema yang didefinisikan sebelumnya
-const Library = //isi disini
+const Library = mongoose.model('Library',librarySchema, 'library'); //isi disini
 
   module.exports = Library;

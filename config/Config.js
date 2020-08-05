@@ -8,4 +8,8 @@ module.exports = {
   // APP_PORT sebagai PORT untuk menjalankan project express dengan environment variable `HOST`
   //          jika environment variable tidak tersedia, maka nilai APP_PORT menjadi 80
   // APP_PORT: 
+      //ubah DB yang sudah di bold dengan host mongodb masing-masing
+      DB: process.env.HOST ? process.env.HOST : 'localhost',
+      //learnit-react?retryWrites=true&w=majority',
+      APP_PORT: process.env.PORT? process.env.PORT:80,
 };
